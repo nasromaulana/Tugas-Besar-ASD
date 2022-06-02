@@ -1,5 +1,5 @@
-import cv2
-import mediapipe as mp #mendeteksi jari tangan
+import cv2 #library image processing
+import mediapipe as mp #mendeteksi bagian tubuh contohnya jari tangan
 import time
  
  
