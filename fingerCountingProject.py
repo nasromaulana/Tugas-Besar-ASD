@@ -28,6 +28,13 @@ def Nomor(ar): #Fungsi buat mendapatkan nomor
     elif(s=="01010"):
         return(9)      
  
+wcam,hcam=640, 480
+cap=cv2.VideoCapture(0)
+#fungsi perpustakaan openCV untuk pemrosesan dengan menangkap melalui webcam internal "(0)"
+cap.set(3,wcam) #ukuran tampilan kamera
+cap.set(4,hcam)
+pTime=0 #deklarasi variabel pTime (previous time)
+detector = htm.handDetector(detectionCon=0.75) # instansiasi class
 
 while True:
     success,img = cap.read() #membuat/membaca frame kamera
