@@ -40,7 +40,6 @@ while True:
     success,img = cap.read() #membuat/membaca frame kamera
     img = detector.findHands(img, draw=True ) #mendeteksi tangan pada kamera
     lmList=detector.findPosition(img,draw=False) #mendeteksi koordinat tiap titik pada jari tangan
-    #print(lmList)
     tipId=[4,8,12,16,20] #mengambil titik ujung ditiap jari
     if(len(lmList)!=0): #mengecek kalo ada tangan di kamera lalu
         jari=[]
