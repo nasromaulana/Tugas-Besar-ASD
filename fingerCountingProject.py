@@ -64,15 +64,4 @@ while True:
         #cv2.putText(image, text, org, font, fontScale, color[, thickness[, lineType[, bottomLeftOrigin]]])
         #membuat tampilan angka
   
-    cTime=time.time()
-    fps=1/(cTime-pTime)
-    pTime=cTime
-    cv2.putText(img, f'FPS: {int(fps)}',(400,70),cv2.FONT_HERSHEY_COMPLEX,1,(0,0,0),3)
-    #membuat tampilan fps
-    cv2.imshow("image",img)
-    #cv2.imshow(window_name, image)
-    #menampilkan hasil kamera dalam window bernama image
-
-    if(cv2.waitKey(1) & 0xFF== ord('q')): #delay selama 1 milisecond dalam vidio 
-        break #pencet q = keluar
-
+   
